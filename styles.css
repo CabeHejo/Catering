@@ -1,0 +1,257 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    padding-top: 70px; /* Memberikan ruang untuk navbar */
+}
+
+/* Navbar di Atas */
+.navbar-top {
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-top h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #aaa;
+}
+
+.search-container input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.search-container input::placeholder {
+    color: #bbb;
+}
+
+/* Container untuk Konten */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(43, 43, 43);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: rgb(145, 143, 143);
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color: #202021;
+}
+
+.support-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.support-header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section */
+.faq h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:#ffffff
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #505050;
+}
+
+/* Guides Section */
+.guides h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.guides ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.guides ul li a {
+    color: #62a1ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.guides ul li a:hover {
+    color: #aaa;
+}
+
+/* Contact Information */
+.contact-info h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #62a1ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info ul li a:hover {
+    color: #aaa;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
